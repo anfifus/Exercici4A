@@ -31,7 +31,6 @@ public class Main {
 
     private static void addTask(ArrayList<Task> listTask) {
 
-        Scanner scan = new Scanner(System.in);
         String nameTask = addTaskName();
         String descriptionTask = addTaskDescription();
         Task task = new Task(nameTask,descriptionTask);
@@ -59,7 +58,6 @@ public class Main {
         System.out.println("Write the name of the task to be deleted");
         Scanner scan = new Scanner(System.in);
         String nameTask = scan.nextLine();
-        int getIndex = 0;
         ListIterator<Task> listItTask = listTask.listIterator();
         while(listItTask.hasNext())
         {
